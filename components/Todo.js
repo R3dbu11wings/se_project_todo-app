@@ -1,4 +1,4 @@
-class Todo {
+export default class Todo {
   constructor(data, selector) {
     this._data = data;
     this._templateElement = document.querySelector(selector);
@@ -20,7 +20,6 @@ class Todo {
     this._todoCheckboxEl.id = `todo-${this._data.id}`;
     this._todoLabel.setAttribute("for", `todo-${this._data.id}`);
   }
-
   _setDueDate() {
     const dueDate = new Date();
     if (!isNaN(dueDate)) {
@@ -37,11 +36,11 @@ class Todo {
       .querySelector(".todo")
       .cloneNode(true);
 
-    const todoNameEl = this._todoElement.querySelector(".todo__name");
+    this._todoNameEl = this._todoElement.querySelector(".todo__name");
     this._todoDate = this._todoElement.querySelector(".todo__date");
     this._todoDeleteBtn = this._todoElement.querySelector(".todo__delete-btn");
 
-    todoNameEl.textContent = this._data.name;
+    this._todoNameEl.textContent = this._data.name;
     this._todoDate.textContent = this._data.date;
 
     this._generateCheckboxEl();
@@ -51,5 +50,3 @@ class Todo {
     return this._todoElement;
   }
 }
-
-export default Todo;

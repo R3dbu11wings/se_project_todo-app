@@ -13,5 +13,4 @@ Give a description of the technologies and techniques used. Pictures, GIFs, or s
 ## Deployment
 
 This project is deployed on GitHub Pages:
-
-- ADD LINK HERE
+https://github.com/R3dbu11wings/se_project_todo-app
