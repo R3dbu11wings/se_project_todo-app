@@ -1,16 +1,13 @@
 # Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+Todo list using methods in oop.
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+Create new todo task and dates to a list.
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
-
 ## Deployment
 
-This project is deployed on GitHub Pages:
-https://github.com/R3dbu11wings/se_project_todo-app
+[https://github.com/R3dbu11wings/se_project_todo-app]
