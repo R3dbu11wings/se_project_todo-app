@@ -48,10 +48,11 @@ export default class FormValidator {
   }
 
   resetValidation() {
+    this._formEl.reset();
     this._inputList.forEach((inputElement) => {
       this._hideInputError(inputElement);
     });
-    this._toggleButtonState();
+    this._disableButton();
   }
 
   _hasInvalidInput() {
@@ -80,7 +81,7 @@ export default class FormValidator {
   enableValidation() {
     this._formEl.addEventListener("submit", (evt) => {
       evt.preventDefault();
-      this._disableButton();
+      this.resetValidation();
     });
 
     this._setEventListeners();
